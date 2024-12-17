@@ -5,156 +5,297 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
- <link rel="stylesheet" href="./css/style.css">
  <title>Document</title>
+ <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
  <header>
-  <div>
-   <a href="/" class="logo">TreasuredBooks</a>
+  <div class="top-header">
+   <p>
+    <i class="bi bi-telephone-fill"></i>+2349123998340
+   </p>
+   <div class="links">
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-linkedin"></i>
+   </div>
   </div>
-  <div class="nav-overlay" onclick="toggleMenu()"></div>
-  <!-- Overlay for closing -->
-  <nav class="nav-menu">
-   <i class="bi bi-x close-btn" onclick="toggleMenu()"></i>
-   <h3 class="logo">TreasuredBooks</h3>
-   <a href="#home">Home</a>
-   <a href="#about">About</a>
-   <a href="#services">Services</a>
-   <a href="#contact">Market</a>
-   <a href="#contact">Contact</a>
-  </nav>
-  <div class="extra">
-   <i class="bi bi-brightness-high l-mode toggle-mode"></i>
-   <button class="btn">sign in</button>
-   <i class="bi bi-list menu" onclick="toggleMenu()"></i>
+  <div class="middle-header">
+   <img style="border-radius:50%;" src="https://via.placeholder.com/60" alt="User Image">
+   <div class="search">
+    <input type="text" placeholder="Search Books ...">
+    <i class="bi bi-search"></i>
+   </div>
+   <div class="personal">
+    <h5><i class="bi bi-person"></i>  ACCOUNT</h5>
+    <h5><i class="bi bi-cart"></i>  CART:(0 $)</h5>
+    <h5><i class="bi bi-heart"></i>  WISHST</h5>
+   </div>
+  </div>
+  <hr>
+  <div class="outer-header">
+   <a>HOME</a>
+   <a>ABOUT US</a>
+   <a>BOOKS</a>
+   <a>NEW RELEASE</a>
+   <a>CONTACT US</a>
+   <a>BLOG</a>
   </div>
  </header>
 
  <main>
-  <section class="intro">
-   <div class="hero">
-    <h1 class="headline">
-     Discover a world of knowledge, imagination, and inspiration at
-     <span class="logo">TreasuredBooks</span>.
-    </h1>
-    <p class="description">
-     Explore timeless classics, modern masterpieces, and hidden gems that ignite your love for reading.
+  <div class="intro">
+   <div class="details">
+    <h3>TREASURED BOOKS</h3>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt, sed id quisquam eligendi reprehenderit voluptates minus impedit, nulla quas consequuntur odio ipsa. Illum atque eius aspernatur, est odio voluptas a iusto, reprehenderit et hic ipsum nobis ex dicta quia animi tenetur dolor quaerat eaque amet. Iusto quas praesentium eveniet.
     </p>
+    <a href="#">READ MORE <i class="bi bi-arrow-right"></i></a>
    </div>
-  </section>
-  <section class="category">
-   <h2>Books Categories</h2>
-   <p>
-    Books comes in different genre and themes, offering something for every reader. Below are just a few of the many categories available. Dive in and discover where your interest leads you.
-   </p>
+   <img src="/images/banner.jpg" alt="banner image">
+  </div>
+  <div class="category">
+   <div class="start">
+    <hr>
+    <p>
+     CATEGORIES
+    </p>
+    <hr>
+   </div>
+   <h3>Explore our Top Categories</h3>
    <div class="cards">
     <div class="card">
-     <img src="images/fiction.jpg" alt="Fiction">
-     <h5>Fiction</h5>
+     <img src="/images/education.jpg" alt="Education image">
+     <h5>Education</h5>
      <p>
-      Explore stories that transport you to worlds of imagination, drama, and adventure.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem enim quaerat molestiae, temporibus et.
      </p>
     </div>
     <div class="card">
-     <img src="images/science.jpg" alt="Mystery">
-     <h5>Mystery</h5>
+     <img src="/images/engineering.jpg" alt="Education image">
+     <h5>Engineering</h5>
      <p>
-      Dive into thrilling tales of suspense and unravel puzzling mysteries.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem enim quaerat molestiae, temporibus et.
      </p>
     </div>
     <div class="card">
-     <img src="images/selfhelp.jpg" alt="Self-Help">
-     <h5>Self-Help</h5>
+     <img src="/images/management.jpg" alt="Education image">
+     <h5>Management</h5>
      <p>
-      Discover books that inspire growth, motivation, and personal development.
-     </p>
-    </div>
-    <div class="card">
-     <img src="images/history.jpg" alt="History">
-     <h5>History</h5>
-     <p>
-      Uncover the stories of the past and learn about pivotal events that shaped the world.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem enim quaerat molestiae, temporibus et.
      </p>
     </div>
    </div>
-  </section>
-  <section class="about">
-   <div class="about-content">
-    <h2>About Treasured Books</h2>
-    <p>
-     Welcome to Treasured Books, where the timeless charm of literature meets modern-day curation.
-     Explore a collection of handpicked books that inspire, educate, and entertain. From classics to
-     contemporary masterpieces, Treasured Books offers a journey into the world of words, crafted
-     for book lovers by book lovers.
-    </p>
-    <button class="read-more">Read More</button>
-   </div>
-  </section>
-  <section class="testimonial">
-   <div class="testimonial-container">
-    <h2>User Testimonials</h2>
-    <div class="comments">
-     <div class="comment">
-      <img src="https://via.placeholder.com/50" alt="User Image">
-      <p>
-       <strong>Jane Doe:</strong> Treasured Books has an incredible selection! I found so many hidden gems here.
-      </p>
-     </div>
-     <div class="comment">
-      <img src="https://via.placeholder.com/50" alt="User Image">
-      <p>
-       <strong>John Smith:</strong> A haven for book lovers! The curated collection is simply amazing.
-      </p>
-     </div>
+   <a href="#">READ MORE <i class="bi bi-arrow-right"></i></a>
+  </div>
+  <div class="about">
+   <div class="aside">
+    <div class="heading">
+     <hr>
+     <p>
+      ABOUT
+     </p>
     </div>
-    <form class="comment-form">
-     <h3>Leave a Comment</h3>
-     <label for="username">Username</label>
-     <input type="text" id="username" name="username" required>
+    <div class="details">
+     <h5>Access, Read, Practice & Engage with TREADSUREDBOOKS</h5>
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut expedita tenetur quo et veritatis facilis cupiditate mollitia iusto a!</P>
+    </div>
 
-     <label for="email">Email Address</label>
-     <input type="email" id="email" name="email" required>
-
-     <label for="image">Upload Image</label>
-     <input type="file" id="image" name="image" accept="image/*">
-
-     <button type="submit">Submit</button>
+    <form action="">
+     <div class="newsletter">
+      <input type="email" placeholder="Enter your email">
+      <button>LOGIN</button>
+     </div>
     </form>
    </div>
-  </section>
- </main>
- <footer class="site-footer">
-  <div class="footer-container">
-   <div class="footer-content">
-    <h3>Contact Us</h3>
-    <form class="contact-form">
-     <label for="name">Your Name</label>
-     <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-     <label for="email">Your Email</label>
-     <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-     <label for="message">Your Message</label>
-     <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-
-     <button type="submit">Send Message</button>
-    </form>
+   <img src="/images/about.jpg" alt="About  image">
+  </div>
+  <div class="some-items">
+   <div class="start">
+    <div class="heading">
+     <hr>
+     <p>
+      SOME QUALITY ITEMS
+     </p>
+     <hr>
+    </div>
+    <h3>New Release Books</h3>
+   </div>
+   <div class="carousel-container">
+    <div class="cards-wrapper">
+     <!-- Card 1 -->
+     <div class="card">
+      <img src="/images/management.jpg" alt="Book 1">
+      <p class="title">
+       Simple Way Of Piece Life.
+      </p>
+      <p class="author">
+       Amor Ransay
+      </p>
+      <p class="price">
+       $40.00
+      </p>
+     </div>
+     <!-- Card 2 -->
+     <div class="card">
+      <img src="/images/management.jpg" alt="Book 2">
+      <p class="title">
+       Great Travel At Desert
+      </p>
+      <p class="author">
+       Scarlett Howdy
+      </p>
+      <p class="price">
+       $38.00
+      </p>
+     </div>
+     <!-- Card 3 -->
+     <div class="card">
+      <img src="/images/management.jpg" alt="Book 3">
+      <p class="title">
+       The Lady Beauty Scarlett
+      </p>
+      <p class="author">
+       Arthur Doyle
+      </p>
+      <p class="price">
+       $45.00
+      </p>
+     </div>
+     <!-- Card 4 -->
+     <div class="card">
+      <img src="/images/management.jpg" alt="Book 4">
+      <p class="title">
+       Once Upon A Time
+      </p>
+      <p class="author">
+       Kilen Marry
+      </p>
+      <p class="price">
+       $35.00
+      </p>
+     </div>
+    </div>
    </div>
 
+   <!-- Pagination -->
+   <div class="pagination">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+   </div>
 
-   <div class="footer-social">
-    <h4>Follow Us</h4>
-    <ul>
-     <li><a href="#" target="_blank">Facebook</a></li>
-     <li><a href="#" target="_blank">Twitter</a></li>
-     <li><a href="#" target="_blank">Instagram</a></li>
-    </ul>
+   <!-- View All Products -->
+   <div class="view-all">
+    <a href="#">View All Products →</a>
    </div>
   </div>
- </footer>
+  <hr style="margin: 10px 30px; border:  2px solid #f6f6f6;">
 
- <script src="./js/script.js">
- </script>
+
+  <div class="featured-book-container">
+   <!-- Book Cover -->
+   <div class="book-cover">
+    <img src="/images/education.jpg" alt="Birds Gonna Be Happy Book Cover">
+   </div>
+
+   <!-- Book Details -->
+   <div class="book-details">
+    <h3 class="book-title">Featured Book</h3>
+    <p class="author">
+     BY TIMUR HOOD
+    </p>
+    <h2 class="book-name">Birds Gonna Be Happy</h2>
+    <p class="book-description">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.
+    </p>
+    <p class="price">
+     $ 45.00
+    </p>
+    <button class="view-more-btn">VIEW MORE →</button>
+   </div>
+  </div>
+  <div class="newsletter-container">
+   <div class="newsletter-content">
+    <h2>Subscribe To Our Newsletter</h2>
+    <div class="content">
+     <p>
+      Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.
+     </p>
+     <div class="newsletter-form">
+      <form action="">
+       <input type="email" placeholder="Email Address">
+       <button type="submit">SEND</button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+ </main>
+ <footer>
+  <div class="footer-container">
+   <!-- Left Section -->
+   <div class="footer-left">
+    <h4 class="footer-logo">TREASURED BOOKS</h4>
+    <p class="footer-description">
+     Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+    <div class="social-icons">
+     <a href="#"><i class="bi bi-facebook"></i></a>
+     <a href="#"><i class="bi bi-linkedin"></i></a>
+     <a href="#"><i class="bi bi-twitter"></i></a>
+
+    </div>
+    <p class="footer-copyright">
+     &copy; 2022 AdstraCode. All Rights Reserved.
+    </p>
+   </div>
+
+   <!-- Middle Section -->
+   <div class="footer-middle">
+    <h4>COMPANY</h4>
+    <ul>
+     <li><a href="#">HOME</a></li>
+     <li><a href="#">ABOUT US</a></li>
+     <li><a href="#">BOOKS</a></li>
+     <li><a href="#">EBOOKS</a></li>
+     <li><a href="#">NEW RELEASE</a></li>
+     <li><a href="#">CONTACT US</a></li>
+     <li><a href="#">BLOG</a></li>
+    </ul>
+   </div>
+
+   <!-- Right Section -->
+   <div class="footer-right">
+    <h4>LATEST NEWS</h4>
+    <div class="news-item">
+     <img src="/images/education.jpg" alt="News Image">
+     <div class="news-desc">
+      <h5>Nostrud exercitation</h5>
+      <p>
+       Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+     </div>
+    </div>
+    <div class="news-item">
+     <img src="/images/education.jpg" alt="News Image">
+     <div class="news-desc">
+      <h5>Nostrud exercitation</h5>
+      <p>
+       Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+   <a href="#">Privacy</a> | <a href="#">Terms of Service</a>
+  </div>
+ </footer>
+ <script src="/js/script.js"></script>
 </body>
 </html>
