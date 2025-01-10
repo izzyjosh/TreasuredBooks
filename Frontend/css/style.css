@@ -28,7 +28,6 @@ a {
   text-decoration: none;
 }
 
-
 header .top-header {
   display: flex;
   justify-content: space-between;
@@ -289,30 +288,28 @@ main .about {
         padding: 20px 0;
       }
     }
-    & form {
-      margin: 20px 0 10px 20px;
-    }
     & .newsletter {
-      border-radius: 8px;
+      display: flex;
+      justify-content: space-evenly;
+      color: #fff;
+      background: var(--primart-text-color);
+      padding: 10px 20px;
+      width: 100%;
+      border-radius: 10px;
 
-      & input {
-        background: #ffffff;
-        border: none;
-        padding: 12px;
-        outline: none;
-        width: 60%;
-      }
-      & input::placeholder {
-        color: #000000;
-        font-weight: 200;
-      }
       & button {
-        padding: 12px;
+        background: transparent;
         border: none;
-        background: var(--accent-color);
-        color: #ffffff;
-        font-weight: 400;
-        width: 20%;
+        color: #fff;
+
+        & span {
+          background: transparent;
+          font-weight: 500;
+          margin: 0 20px;
+        }
+        & i {
+          background: transparent;
+        }
       }
     }
   }
@@ -830,6 +827,7 @@ footer {
     & .book-details {
       width: 100%;
       margin: 0;
+      padding: 30px;
     }
   }
   .newsletter-content {
@@ -841,10 +839,12 @@ footer {
 
       & form {
         & input {
+          background: green;
           width: 100%;
           gap: 0;
         }
         & button {
+          background: green;
           width: 100%;
           margin: 10px 0;
         }
