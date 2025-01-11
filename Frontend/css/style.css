@@ -297,6 +297,10 @@ main .about {
       width: 100%;
       border-radius: 10px;
 
+      & #googleSignOutBtn {
+        display: none;
+      }
+
       & button {
         background: transparent;
         border: none;

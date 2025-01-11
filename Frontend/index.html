@@ -30,6 +30,7 @@
       </div>
       <div class="middle-header">
         <img
+          id="userImage"
           style="border-radius: 50%"
           src="https://via.placeholder.com/60"
           alt="User Image"
@@ -46,10 +47,10 @@
       </div>
       <hr />
       <div class="outer-header">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
+        <a href="#top">HOME</a>
+        <a href="#about">ABOUT US</a>
         <a href="#">BOOKS</a>
-        <a href="#">NEW RELEASE</a>
+        <a href="#new-releases">NEW RELEASE</a>
         <a href="#">CONTACT US</a>
       </div>
     </header>
@@ -105,7 +106,7 @@
         </div>
         <a href="#">READ MORE <i class="bi bi-arrow-right"></i></a>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <div class="aside">
           <div class="heading">
             <hr />
@@ -128,13 +129,13 @@
             </button>
             <button id="googleSignOutBtn">
               <span class="btn-txt"> Logout </span>
-                            <i class="bi bi-box-arrow-left"></i>
+              <i class="bi bi-box-arrow-left"></i>
             </button>
           </div>
         </div>
         <img src="/images/about.jpg" alt="About  image" />
       </div>
-      <div class="some-items">
+      <div class="some-items" id="new-releases">
         <div class="start">
           <div class="heading">
             <hr />
@@ -144,36 +145,7 @@
           <h3>New Release Books</h3>
         </div>
         <div class="carousel-container">
-          <div class="cards-wrapper">
-            <!-- Card 1 -->
-            <div class="card">
-              <img src="/images/management.jpg" alt="Book 1" />
-              <p class="title">Simple Way Of Piece Life.</p>
-              <p class="author">Amor Ransay</p>
-              <p class="price">$40.00</p>
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-              <img src="/images/management.jpg" alt="Book 2" />
-              <p class="title">Great Travel At Desert</p>
-              <p class="author">Scarlett Howdy</p>
-              <p class="price">$38.00</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-              <img src="/images/management.jpg" alt="Book 3" />
-              <p class="title">The Lady Beauty Scarlett</p>
-              <p class="author">Arthur Doyle</p>
-              <p class="price">$45.00</p>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-              <img src="/images/management.jpg" alt="Book 4" />
-              <p class="title">Once Upon A Time</p>
-              <p class="author">Kilen Marry</p>
-              <p class="price">$35.00</p>
-            </div>
-          </div>
+          <div class="cards-wrapper"></div>
         </div>
 
         <!-- Pagination -->
@@ -254,13 +226,11 @@
         <div class="footer-middle">
           <h4>COMPANY</h4>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
             <li><a href="#">BOOKS</a></li>
-            <li><a href="#">EBOOKS</a></li>
-            <li><a href="#">NEW RELEASE</a></li>
+            <li><a href="#new-releases">NEW RELEASE</a></li>
             <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">BLOG</a></li>
           </ul>
         </div>
 
