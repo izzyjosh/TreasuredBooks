@@ -3,8 +3,8 @@ import {
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
-  getRedirectResult,
-  onAuthStateChanged
+  onAuthStateChanged,
+  signOut
 } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -18,47 +18,44 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = getAuth();
 
 const provider = new GoogleAuthProvider();
 
-document.getElementById("googleSignInBtn").addEventListener("click", () => {
-  console.log("Sign-in button clicked");
+const authButton = document.getElementById("googleSignInBtn");
+const logoutBtn = document.getElementById("googleSignOutBtn");
 
+logoutBtn.style.display = "none";
+
+authButton.addEventListener("click", () => {
   signInWithPopup(auth, provider)
     .then(result => {
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-
       const user = result.user;
       console.log(user);
     })
     .catch(error => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      const email = error.customData.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
     });
 });
 
 onAuthStateChanged(auth, user => {
-  authButton = document.getElementById("googleSignInBtn");
   if (user) {
-    authButton.textContent = "Signout";
-    authButton.onClick = () => {
-      logout();
-    };
+    logoutBtn.style.display = "block";
+    authButton.style.display = "none";
+
+    logoutBtn.addEventListener("click", () => {
+      signOut(auth)
+        .then(() => {
+          alert("signout successfully");
+        })
+        .catch(error => {
+          alert("An error occured");
+        });
+    });
   } else {
-    authButton.textContent = `<span class="btn-txt"> continue with google </span><i class="bi bi-google"></i>`;
+    // User is signed out
+    logoutBtn.style.display = "none";
+    authButton.style.display = "block";
   }
 });
-
-const logout = () => {
-  signOut(auth)
-    .then(() => {
-      console.log("signout successfully");
-    })
-    .catch(error => {
-      console.log("An error occured");
-    });
-};
